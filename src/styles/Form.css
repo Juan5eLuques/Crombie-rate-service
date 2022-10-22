@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-container{
+    width: 700px;
+}
+
+.button-next-page {
+    width: 140px;
+    height: 38px;
+    background-color: #000;
+    color: #dadada;
+    border-radius: 20px;
+    border:#6b6b6b solid 0.1px;
+    cursor: pointer;
+    transition: background-color, color, 1800ms;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.button-next-page:hover{
+    background-color: #fff;
+    color: #000;
+}
+

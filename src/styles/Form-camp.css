@@ -1,0 +1,35 @@
+.camp-container {
+    width: 100%;
+    height: 42px;
+    color: #000;
+    display: flex;
+    gap: 20px;
+    margin:15px;
+    align-items: center;
+    flex-direction: row;
+}
+
+input {
+    height: 32px;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 30px;
+    color : #777777;
+    border-bottom:#353535 solid 0.2px;
+}
+
+input::placeholder{
+    color: #353535;
+}
+
+input:focus{
+border-bottom: #777777 solid 0.1px;
+}
+
+span{
+    font-family: "Suisse Intl",sans-serif;
+    font-size: 30px;
+    color: #fff;
+}

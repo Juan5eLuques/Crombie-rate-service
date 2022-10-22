@@ -1,0 +1,21 @@
+.stars {
+    cursor:pointer;
+    transition: scale 100ms;
+}
+
+.stars :hover {
+    scale: 1.05;
+}
+
+.stars-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stars-container span {
+
+    font-size: 42px;
+
+}
