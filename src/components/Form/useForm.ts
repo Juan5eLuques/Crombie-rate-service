@@ -1,6 +1,5 @@
 import React,{useState} from "react";
-import { Stars } from "../components/Stars";
-import {FormType} from '../types/Form'
+import {FormType} from '../../types/Form'
 
 export const useForm = (stars : number = 1) => {
 

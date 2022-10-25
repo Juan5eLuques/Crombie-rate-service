@@ -1,6 +1,6 @@
 .stars {
     cursor:pointer;
-    transition: scale 100ms;
+    transition: scale, color 300ms;
 }
 
 .stars :hover {

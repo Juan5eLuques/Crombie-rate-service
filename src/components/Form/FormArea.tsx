@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Form-camp.css'
+import '../../styles/Form-camp.css'
 
 type PropType = {
     title : string,

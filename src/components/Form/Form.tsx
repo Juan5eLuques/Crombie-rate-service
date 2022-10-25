@@ -1,9 +1,8 @@
-import React, { HtmlHTMLAttributes, useEffect, useState } from "react";
-import { useForm } from "../hooks/useForm";
+import { useForm } from "./useForm";
 import { FormArea } from "./FormArea";
-import { Stars } from "./Stars";
-import { useStars } from "../hooks/useStars";
-import '../styles/Form.css'
+import { Stars } from "../Stars/Stars";
+import '../../styles/Form.css'
+import {Link} from 'react-router-dom'
 
 export const Form = () => {
 

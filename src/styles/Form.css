@@ -17,7 +17,7 @@
     border-radius: 20px;
     border:#6b6b6b solid 0.1px;
     cursor: pointer;
-    transition: background-color, color, 1800ms;
+    transition: background-color, color, 1300ms;
     position: absolute;
     right: 0;
     bottom: 0;

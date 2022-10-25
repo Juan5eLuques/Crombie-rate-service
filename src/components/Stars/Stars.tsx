@@ -1,7 +1,6 @@
-import { useState } from "react"
 import {FaStar} from 'react-icons/fa'
-import '../styles/Stars.css'
-import { useStars } from '../hooks/useStars'
+import '../../styles/Stars.css'
+import { useStars } from './useStars'
 
 type StarsProps = {
   getStars : (stars : number) => void
@@ -47,11 +46,10 @@ return (
             className="stars"
             size={34}
             key={index}
-            color={
-              (star.hoverValue || star.currentValue) > index
-                ? //colors.find(element => element.index === index)?.starColor <- Stars with Crombie colors
-                'orange'
-                : 'gray'
+            color={(star.hoverValue || star.currentValue) > index
+              ? // colors.find(element => element.index === index)?.starColor // <- Stars with Crombie colors
+              'orange'
+              : 'gray'
             }
             onClick={() =>handlerClickStar(index + 1)}
             onMouseOver={() => star.handleMouseOver(index + 1)}

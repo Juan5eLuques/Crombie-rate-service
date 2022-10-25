@@ -1,29 +1,21 @@
-import { useState } from 'react'
 import './styles/App.css'
-import {Form} from './components/Form'
-import crombieImage from './assets/image-crombie.png'
+import {Form} from './components/Form/Form'
+import { Header } from './components/Header'
+import { Link, Routes, Route } from 'react-router-dom'
+import { Home } from './pages/Home'
+import { StepOne } from './pages/StepOne'
+import { StepTwo } from './pages/StepTwo'
 
 function App () {
 
   return (
     <div className="App">
-      <div className='header'>
-        <a href='#' style={{display:'flex', alignItems:'center', fontSize:'1rem', fontWeight:'400'}}>
-          <img src={crombieImage}/>
-          <div className='logo'> Crombie </div>
-        </a>
-      </div>
-      <div className='title-section'>
-        <div style={{position:'relative'}}>
-          <h1> Rate our services </h1>
-          <span>⇨ Your opinion matters to us</span>
-        </div>
-      </div>
-      <div className='content'>
-        <section className='form-section'>
-          <Form/>
-        </section>
-      </div>
+     <Header/>
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/step-one' element={<StepOne/>}/>
+      <Route path='/step-two' element={<StepTwo/>}/>
+     </Routes>
     </div>
   )
 }
